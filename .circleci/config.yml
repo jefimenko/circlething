@@ -34,6 +34,8 @@ jobs:
             . venv/bin/activate
             pip install -r requirements.txt
             echo $(pwd)
+            echo $(ls /home/circleci/repo)
+            echo $(ls /home/circleci/repo/circlething)
             printenv
 
       - save_cache:
