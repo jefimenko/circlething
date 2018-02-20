@@ -8,7 +8,7 @@ jobs:
     docker:
       - image: circleci/python:3.6.3
         environment:
-          PYTHONPATH: ~/repo
+          PYTHONPATH: /home/circleci/repo
       
       # Specify service dependencies here if necessary
       # CircleCI maintains a library of pre-built images
@@ -35,7 +35,6 @@ jobs:
             pip install -r requirements.txt
             echo $(pwd)
             echo $(ls /home/circleci/repo)
-            echo $(ls /home/circleci/repo/circlething)
             printenv
 
       - save_cache:
