@@ -11,4 +11,4 @@ def test_my_foo():
     """
     my_bar = a_py_file.i_pity_duh_foo()
 
-    assert my_bar is "bar"
+    assert my_bar == "bar"
