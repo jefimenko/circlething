@@ -3,7 +3,7 @@ This be the sample module.
 """
 
 
-def i_pity_duh_foo():
+def foo():
     """
     There ain't no trippin' up the linter.
     """
